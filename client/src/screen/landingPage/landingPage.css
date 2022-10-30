@@ -1,0 +1,75 @@
+.main {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../Cover2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-size: 4.5rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+}
+
+/* .intro-text {
+  width: 100%;
+  text-align: center;
+} */
+
+.buttonContainer {
+  margin-top: 2rem;
+  width: 32%;
+}
+
+.landingButton {
+  width: 12rem;
+  height: 3.2rem;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .title {
+    font-size: 4rem;
+    padding-left: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+  }
+
+  .buttonContainer {
+    margin-top: 2rem;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 28%;
+    margin-left: 1.8rem;
+  }
+
+  .landingButton {
+    width: 10rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .landingButton {
+    width: 9rem;
+    height: 2.8rem;
+  }
+}

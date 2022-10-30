@@ -1,0 +1,20 @@
+.userbox{
+    display: flex;
+}
+
+.width{
+    width: 50%;
+    padding: 1rem;
+}
+
+.user-img{
+    height: 26rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+
+.image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
