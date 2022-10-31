@@ -18,7 +18,7 @@ app.use(cors());
 
 
 app.get('/',(req,res)=>{
-  res.send("Hey there, How are you!")
+  res.send("Server Started...")
 })
 
 app.use('/api/user',userRoute)
