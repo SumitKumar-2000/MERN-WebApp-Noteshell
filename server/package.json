@@ -14,7 +14,6 @@
   "version": "1.0.0",
   "description": "NoteShell Server side",
   "main": "server.js",
-  "devDependencies": {},
   "author": "",
   "license": "ISC"
 }
