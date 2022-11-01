@@ -9,7 +9,7 @@ const app = express();
 
 // connecting with database
 mongoose.connect(
-  "mongodb+srv://sumit:SumitKumar@cluster0.6kqfc.mongodb.net/NotesShell?retryWrites=true&w=majority",
+  process.env.DATABASE_ULR,
   { useUnifiedTopology: true, useNewUrlParser: true }
 );
 
