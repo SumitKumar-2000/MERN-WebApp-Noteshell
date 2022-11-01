@@ -15,8 +15,7 @@ const MainScreen = ({title,children}) => {
                                 <hr />
                             </>
                         )
-                    }    
-                    
+                    }                        
                 </div>
                 {children}
             </Row>

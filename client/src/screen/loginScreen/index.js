@@ -32,7 +32,7 @@ const LoginScreen = () => {
       
       setLoading(true);
 
-      await axios.post('http://localhost:5000/api/user/login',{
+      await axios.post('https://noteshell-api.herokuapp.com/api/user/login',{
         email,
         password,
       }).then(res=>{

@@ -33,7 +33,7 @@ const CreateNote = () => {
       }
     }
 
-    await axios.post("http://localhost:5000/api/notes/create",{
+    await axios.post("https://noteshell-api.herokuapp.com/api/notes/create",{
       title:title,content:content,category:category
     },config).then( 
       res=>console.log("notes -->",res.data),

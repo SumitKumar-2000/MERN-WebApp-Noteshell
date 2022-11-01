@@ -25,7 +25,7 @@ const EditUser = () => {
       }
     }
     
-    await axios.post(`http://localhost:5000/api/user/profile`,{
+    await axios.post(`https://noteshell-api.herokuapp.com/api/user/profile`,{
       name:editedName,
       email:editedEmail,
       password:editedPassword,

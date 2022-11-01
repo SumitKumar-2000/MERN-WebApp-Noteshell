@@ -27,7 +27,7 @@ const MyNotes = ({query}) => {
         },
       };
       
-      await axios.delete(`http://localhost:5000/api/notes/${id}`,config)
+      await axios.delete(`https://noteshell-api.herokuapp.com/api/notes/${id}`,config)
       .then(res => console.log(res.data))
       .catch(err => console.log(err.response.data))
       
@@ -46,7 +46,7 @@ const MyNotes = ({query}) => {
       },
     }
 
-    axios.get("http://localhost:5000/api/notes",config)
+    axios.get("https://noteshell-api.herokuapp.com/api/notes",config)
     .then( res => {
       setNotes(res.data);
       setLoading(false)

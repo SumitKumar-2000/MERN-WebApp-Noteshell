@@ -4,7 +4,7 @@ const { authUserProtect } = require('../middlewares/authMiddleware')
 
 const router = express.Router()
 
-router.route('/').post(registerUser)
+router.route('/register').post(registerUser)
 router.route('/login').post(authUser)
 router.route('/profile').post(authUserProtect,updateUserProfile)
  

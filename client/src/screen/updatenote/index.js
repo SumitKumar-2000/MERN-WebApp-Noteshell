@@ -17,7 +17,7 @@ const UpdateNote = () => {
 
   useEffect(()=>{
     const fetchNote = async () =>{
-      const noteData = await axios.get(`http://localhost:5000/api/notes/${_id}`)
+      const noteData = await axios.get(`https://noteshell-api.herokuapp.com/api/notes/${_id}`)
 
       setTitle(noteData.data.title)
       setContent(noteData.data.content)
@@ -50,7 +50,7 @@ const UpdateNote = () => {
       },
     };
 
-    axios.put(`http://localhost:5000/api/notes/${_id}`,{
+    axios.put(`https://noteshell-api.herokuapp.com/api/notes/${_id}`,{
       title:title, content:content, category:category
     },config).then(
       res=>console.log("updated note : ",res.data),
